@@ -81,7 +81,8 @@ footage and imagery with captions · **OBSERVE → EXPLORE**.
 | s6a | 01:24.3 → 01:30.6 | Tools badle, methods badle, lekin sawaal wahi raha: universe kaam kaise karta hai? | Tools बदले, methods बदले, लेकिन सवाल वही रहा: universe काम कैसे करता है? |
 | s6b | 01:31.6 → 01:39.0 | Indian astronomy ki journey humein yaad dilati hai—observe karo, calculate karo, aur explore karte raho. | Indian astronomy की journey हमें याद दिलाती है... observe करो, calculate करो, और explore करते रहो। |
 
-On screen: TOOLS CHANGED. METHODS CHANGED. *The question stayed: how does the universe work?* ·
+On screen: TOOLS CHANGED. METHODS CHANGED. · a 3D bar chart, **ISRO ORBITAL LAUNCH ATTEMPTS, PER
+DECADE** (1 · 5 · 7 · 16 · 45 · 26 for 2020–25), rising from "Tools" · *The question stayed: how does the universe work?* ·
 then **FROM OBSERVING THE HEAVENS TO EXPLORING THEM.** · end card **OBSERVE. CALCULATE.
 EXPLORE.** Each word lights up as it is spoken (01:35.0, 01:36.2, 01:37.6). Credits follow, and
 the frame holds to 01:45.0.
@@ -95,4 +96,5 @@ the frame holds to 01:45.0.
 - *Jyā* (half-chord) tabulated in the Āryabhaṭīya; the word became Arabic *jiba* and Latin *sinus*.
 - Jantar Mantar, Jaipur: built by Maharaja Sawai Jai Singh II in the early 18th century (instruments c. 1728–1738), UNESCO World Heritage Site (2010). The gnomon's hypotenuse is parallel to Earth's axis, so its tilt equals the local latitude (Jaipur ≈ 26.9° N). This is a geometric property of an equatorial sundial, not a measured claim.
 - Chandrayaan-3: soft landing 23 August 2023 at 69.373° S, 32.319° E (ISRO OHRC image annotation; NASA LROC 69.374° S, 32.32° E), about 600 km from the south pole. That is near the south polar region, not at the pole.
+- ISRO orbital launch attempts per decade: counted from the flight-by-flight list in [`src/data/isroLaunches.json`](../src/data/isroLaunches.json) (ISRO launch records; 100 attempts, 1979–2025). Failures are included; suborbital tests (LVM3-X/CARE, RLV-TD, Scramjet-TD, TV-D1, pad-abort test) are not. The 2020s bar covers 2020–2025 only and is marked as such on screen. Cross-checks: PSLV-C48 was the 50th PSLV flight (Dec 2019), GSLV-F16 the 18th GSLV flight (Jul 2025), and ISRO flew five launches in 2025.
 - The eclipse and trajectory diagrams are explanatory and **not to scale**, and say so on screen. The Chandrayaan-3 route is shown topologically: Earth-bound orbit raising → trans-lunar transfer → lunar orbits.

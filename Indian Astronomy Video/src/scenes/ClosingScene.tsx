@@ -1,12 +1,16 @@
 // Scene 6 — The Connection. Earth above the lunar horizon; a pull-back into a schematic in
 // which the opening's sky-chart rings align around Earth with Chandrayaan-3's route; the
-// night inverts back to paper and the diagram settles into the end-card emblem.
+// night inverts back to paper and the diagram settles into the end-card emblem. While "tools
+// changed, methods changed" is spoken, a 3D chart of ISRO's orbital launches per decade rises
+// in the empty sky above the lunar horizon.
 import type React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Night, Paper } from "../components/Backgrounds";
 import { EarthGlobe } from "../components/EarthGlobe";
+import { GrowthChart } from "../components/GrowthChart";
 import { MoonGlobe } from "../components/MoonGlobe";
-import { MaskLine, Tag } from "../components/Type";
+import { MaskLine, SourceCaption, Tag } from "../components/Type";
+import launches from "../data/isroLaunches.json";
 import { lerp, toPath, type Pt } from "../lib/geometry";
 import { C, EASE, F, clamp } from "../theme";
 import { cue } from "../timeline";
@@ -41,6 +45,12 @@ const LUNAR_ORBITS = [
   [44, 30],
   [28, 24],
 ].map(([a, b]) => lunarOrbit(a, b));
+
+// Orbital launch attempts per decade, counted from the flight list (through 2025).
+const LAUNCHES_BY_DECADE = [1970, 1980, 1990, 2000, 2010, 2020].map((d) => ({
+  label: d === 2020 ? "2020–25*" : `${d}s`,
+  value: launches.flights.filter((f) => f.year >= d && f.year < d + 10).length,
+}));
 
 const mixHex = (a: string, b: string, t: number) => {
   const pa = [1, 3, 5].map((i) => parseInt(a.slice(i, i + 2), 16));
@@ -143,6 +153,18 @@ export const ClosingScene: React.FC = () => {
         <MaskLine at={t.universe} style={{ position: "absolute", left: 136, top: 276 }}>
           <div style={{ fontFamily: F.serif, fontStyle: "italic", fontSize: 64, color: C.goldSoft }}>how does the universe work?</div>
         </MaskLine>
+
+        {/* growth chart: real launch counts, rising on "tools" / "methods"; gone before Earth
+            starts its move to the schematic (toSchematic) so it never crosses the bars */}
+        <AbsoluteFill style={{ opacity: 1 - ease(166, 182) }}>
+          <GrowthChart data={LAUNCHES_BY_DECADE} at={t.tools} origin={[600, 765]} yMax={50} stagger={5} />
+          <Tag x={140} y={400} at={t.tools + 6} color="rgba(245,235,221,0.86)" size={18}>
+            ISRO ORBITAL LAUNCH ATTEMPTS, PER DECADE
+          </Tag>
+          <SourceCaption at={t.tools + 20} dark style={{ left: 140, top: 432, width: 520, fontSize: 16 }}>
+            ISRO launch records, 1979–2025. Failed launches included. *2020s: six years so far.
+          </SourceCaption>
+        </AbsoluteFill>
       </div>
 
       {/* ---------- shot B → emblem ---------- */}
