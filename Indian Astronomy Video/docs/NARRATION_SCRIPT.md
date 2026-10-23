@@ -87,7 +87,7 @@ footage and imagery with captions · **OBSERVE → EXPLORE**.
 On screen: TOOLS CHANGED. METHODS CHANGED. · a 3D bar chart, **ISRO ORBITAL LAUNCH ATTEMPTS, PER
 DECADE** (1 · 5 · 7 · 16 · 45 · 26 for 2020–25), rising from "Tools" · *The question stayed: how does the universe work?* ·
 then **FROM OBSERVING THE HEAVENS TO EXPLORING THEM.** · end card **OBSERVE. CALCULATE.
-EXPLORE.** Each word lights up as it is spoken (01:35.0, 01:36.2, 01:37.6). Credits follow, and
+EXPLORE.** Each word slams in on its spoken word (01:35.0, 01:36.2, 01:37.6), and EXPLORE. lands in a terracotta-to-gold gradient. Credits follow, and
 the frame holds to 01:45.0.
 
 ---

@@ -56,7 +56,7 @@ It doesn't claim that modern Indian spaceflight descends directly from ancient a
 <tr>
 <td><img src="media/gallery/10-observe-explore.jpg" alt="Observe to explore"><br><b>05 · Observe → Explore</b><br><sub>A hold on Vikram, photographed by Pragyan's NavCam from about 15 m.</sub></td>
 <td><img src="media/gallery/11-route.jpg" alt="Chart and route"><br><b>06 · Reflect</b> <sub>1:23</sub><br><sub>A 3D chart of ISRO's orbital launches per decade rises on "tools changed". Then the opening sky chart lines up around Earth with Chandrayaan-3's route.</sub></td>
-<td><img src="media/gallery/12-end-card.jpg" alt="End card"><br><b>06 · End card</b><br><sub>The route becomes an emblem. <i>Observe. Calculate. Explore.</i> light up as each word is spoken.</sub></td>
+<td><img src="media/gallery/12-end-card.jpg" alt="End card"><br><b>06 · End card</b><br><sub>The route becomes an emblem. <i>Observe. Calculate. Explore.</i> slam in, each on its spoken word, with the last in a terracotta-to-gold gradient.</sub></td>
 </tr>
 </table>
 
