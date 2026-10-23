@@ -1,0 +1,7 @@
+{
+  "_doc": "Āryabhaṭa's table of 24 sine differences (Āryabhaṭīya, Gītikāpada verse 12), in arcminutes, for arcs in steps of 3°45′ in a circle of radius 3438′. Running sums give the tabulated jyā (half-chord) values; the 24 differences sum to 3438, the radius. Drawn as a line in AryabhataScene.",
+  "source": "Āryabhaṭīya, Gītikāpada 12; see K. S. Shukla & K. V. Sarma (1976) and Plofker, Mathematics in India (2009).",
+  "radius": 3438,
+  "stepDeg": 3.75,
+  "differences": [225, 224, 222, 219, 215, 210, 205, 199, 191, 183, 174, 164, 154, 143, 131, 119, 106, 93, 79, 65, 51, 37, 22, 7]
+}

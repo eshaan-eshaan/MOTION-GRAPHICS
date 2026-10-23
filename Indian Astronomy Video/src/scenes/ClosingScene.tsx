@@ -281,24 +281,36 @@ export const ClosingScene: React.FC = () => {
               scale: `${ease(t.journey + 52, t.journey + 84, EASE.out)} 1`,
             }}
           />
-          <div style={{ display: "flex", gap: 30, marginTop: 40, fontFamily: F.body, fontWeight: 600, fontSize: 38, letterSpacing: "0.34em" }}>
+          {/* each word slams in on the word the narrator speaks; the last one in the gradient */}
+          <div style={{ display: "flex", gap: 34, marginTop: 38, fontFamily: F.display, fontWeight: 700, fontSize: 54, letterSpacing: "0.08em", lineHeight: 1.1 }}>
             {(
               [
                 ["OBSERVE.", t.observe],
                 ["CALCULATE.", t.calculate],
                 ["EXPLORE.", t.explore],
               ] as const
-            ).map(([w, at]) => (
-              <span
-                key={w}
-                style={{
-                  color: mixHex("#C9BBA6", C.navy, ease(at - 2, at + 8)),
-                  opacity: ease(t.journey + 60, t.journey + 80),
-                }}
-              >
-                {w}
-              </span>
-            ))}
+            ).map(([w, at], i) => {
+              const p = ease(at - 2, at + 6, EASE.out);
+              const last = i === 2;
+              return (
+                <span
+                  key={w}
+                  style={{
+                    display: "inline-block",
+                    opacity: interpolate(p, [0, 0.4], [0, 1], clamp),
+                    translate: `0px ${(1 - p) * -46}px`,
+                    scale: lerp(1.35, 1, p),
+                    filter: `blur(${((1 - p) * 10).toFixed(2)}px)`,
+                    color: last ? "transparent" : C.navy,
+                    backgroundImage: last ? `linear-gradient(90deg, ${C.terracotta}, ${C.gold})` : undefined,
+                    WebkitBackgroundClip: last ? "text" : undefined,
+                    backgroundClip: last ? "text" : undefined,
+                  }}
+                >
+                  {w}
+                </span>
+              );
+            })}
           </div>
         </div>
         <div
