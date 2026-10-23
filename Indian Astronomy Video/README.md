@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://github.com/eshaan-eshaan/MOTION-GRAPHICS/releases/download/v1.0.0/Indian-Astronomy-1080p.mp4">
+  <a href="https://github.com/eshaan-eshaan/MOTION-GRAPHICS/raw/main/Indian%20Astronomy%20Video/IndianAstronomy.mp4">
     <img src="media/banner.jpg" alt="Indian Astronomy: From Ancient Skies to Lunar Exploration" width="100%">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/eshaan-eshaan/MOTION-GRAPHICS/releases/download/v1.0.0/Indian-Astronomy-1080p.mp4"><img alt="Watch the film" src="https://img.shields.io/badge/%E2%96%B6%20WATCH%20THE%20FILM-1080p%20MP4-C58B36?style=for-the-badge&labelColor=17324D"></a>
+  <a href="https://github.com/eshaan-eshaan/MOTION-GRAPHICS/raw/main/Indian%20Astronomy%20Video/IndianAstronomy.mp4"><img alt="Watch the film" src="https://img.shields.io/badge/%E2%96%B6%20WATCH%20THE%20FILM-1080p%20MP4-C58B36?style=for-the-badge&labelColor=17324D"></a>
   <img alt="105 seconds" src="https://img.shields.io/badge/runtime-105%20s-F5EBDD?style=for-the-badge&labelColor=17324D">
   <img alt="1920x1080 30fps" src="https://img.shields.io/badge/1920%C3%971080-30%20fps-F5EBDD?style=for-the-badge&labelColor=17324D">
   <img alt="Hinglish narration" src="https://img.shields.io/badge/narration-Hinglish-A95137?style=for-the-badge&labelColor=17324D">
@@ -21,7 +21,7 @@
 <p align="center">
   <img src="media/preview.gif" alt="21-second highlight reel from the final render" width="100%">
 </p>
-<p align="center"><sub>A 21-second highlight reel cut from the final render. The full film: <a href="https://github.com/eshaan-eshaan/MOTION-GRAPHICS/releases/download/v1.0.0/Indian-Astronomy-1080p.mp4">download it (1080p, 79 MB)</a> or open <a href="IndianAstronomy.mp4"><code>IndianAstronomy.mp4</code></a> in this folder.</sub></p>
+<p align="center"><sub>A 21-second highlight reel cut from the final render. The full film: <a href="https://github.com/eshaan-eshaan/MOTION-GRAPHICS/raw/main/Indian%20Astronomy%20Video/IndianAstronomy.mp4">download it (1080p, 85 MB)</a> or open <a href="IndianAstronomy.mp4"><code>IndianAstronomy.mp4</code></a> in this folder.</sub></p>
 
 ---
 

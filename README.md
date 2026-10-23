@@ -35,7 +35,7 @@ Moon's south polar region.
 
 `1920×1080` · `30 fps` · `105 s` · real star catalogue · ISRO mission imagery · original score
 
-[▶ Watch (1080p MP4)](https://github.com/eshaan-eshaan/MOTION-GRAPHICS/releases/download/v1.0.0/Indian-Astronomy-1080p.mp4) ·
+[▶ Watch (1080p MP4)](https://github.com/eshaan-eshaan/MOTION-GRAPHICS/raw/main/Indian%20Astronomy%20Video/IndianAstronomy.mp4) ·
 [Source](./Indian%20Astronomy%20Video/) ·
 [Script](./Indian%20Astronomy%20Video/docs/NARRATION_SCRIPT.md) ·
 [Sources &amp; licences](./Indian%20Astronomy%20Video/docs/ASSET_MANIFEST.md)
