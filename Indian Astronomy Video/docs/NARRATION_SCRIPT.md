@@ -25,7 +25,7 @@ Times are film time (mm:ss.s): when the line starts → when the speech ends.
 | s1a | 00:00.9 → 00:03.0 | Aaj hum Moon tak pahunch chuke hain. | आज हम Moon तक पहुँच चुके हैं। |
 | s1b | 00:03.5 → 00:08.8 | Lekin ek sawaal hai—aasmaan ko samajhne ka safar shuru kaise hua? | लेकिन एक सवाल है... आसमान को समझने का सफ़र शुरू कैसे हुआ? |
 
-On screen: **INDIAN ASTRONOMY** · OBSERVE. CALCULATE. EXPLORE. The title lands on the word "aasmaan".
+On screen: **INDIAN ASTRONOMY** · OBSERVE. CALCULATE. EXPLORE. The title builds out of dots that spiral from the celestial pole, just after the word "aasmaan". The first dots lock in on the 6.2 s score hit, and the title is complete by about 7.0 s.
 
 ### Scene 2 · Observe (00:09.5 – 00:25.0)
 

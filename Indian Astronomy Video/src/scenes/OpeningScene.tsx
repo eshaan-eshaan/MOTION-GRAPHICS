@@ -1,10 +1,11 @@
 // Scene 1 — The Question. Night sky around the celestial pole; the sky turns, Capella
-// traces its diurnal arc, the arc becomes a celestial diagram, and the title lands.
+// traces its diurnal arc, the arc becomes a celestial diagram, and the title builds itself
+// out of dots that spiral from the celestial pole, landing on the score's title hit.
 import type React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Night } from "../components/Backgrounds";
 import { PolarChart } from "../components/PolarChart";
-import { KineticTitle } from "../components/Type";
+import { PixelTitle } from "../components/PixelTitle";
 import { POLE } from "../lib/sky";
 import { C, EASE, F, clamp } from "../theme";
 import { SCENES, cue } from "../timeline";
@@ -19,6 +20,8 @@ export const OpeningScene: React.FC = () => {
   const { durationInFrames } = SCENES.opening;
 
   const titleAt = cue("opening", "s1b", 4) + 4; // just after "aasmaan"
+  // Dots leave the pole early enough that the first ones lock in on the 6.2 s title hit.
+  const dotsAt = titleAt - 22;
   const lst = interpolate(frame, [22, titleAt - 4], [OPENING_LST.from, OPENING_LST.to], {
     ...clamp,
     easing: EASE.inOut,
@@ -61,16 +64,20 @@ export const OpeningScene: React.FC = () => {
             opacity: interpolate(frame, [titleAt - 20, titleAt + 10], [0, 1], clamp) * titleOut,
           }}
         />
-        <div style={{ position: "absolute", left: 140, top: 318, opacity: titleOut }}>
-          <KineticTitle text="INDIAN" at={titleAt} size={150} color={C.ivory} stagger={1.6} />
-          <KineticTitle
-            text="ASTRONOMY"
-            at={titleAt + 7}
+        <AbsoluteFill style={{ opacity: titleOut }}>
+          <PixelTitle
+            lines={[
+              { text: "INDIAN", x: 140, baseline: 445 },
+              { text: "ASTRONOMY", x: 140, baseline: 602, delay: 5 },
+            ]}
+            at={dotsAt}
             size={150}
-            color={C.ivory}
-            stagger={1.6}
-            style={{ marginTop: -6 }}
+            centre={POLE}
           />
+        </AbsoluteFill>
+        <div style={{ position: "absolute", left: 140, top: 318, opacity: titleOut }}>
+          {/* the two 150 px title lines are drawn by PixelTitle; this keeps the subtitle in place */}
+          <div style={{ height: 318 }} />
           <div
             style={{
               display: "flex",
