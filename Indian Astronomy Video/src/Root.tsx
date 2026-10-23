@@ -1,5 +1,6 @@
 import "./theme";
-import { Composition, Folder } from "remotion";
+import { Composition, Folder, Still } from "remotion";
+import { DesignSystem, ProjectBanner, RootBanner } from "./repo/RepoStills";
 import { OpeningScene } from "./scenes/OpeningScene";
 import { ObservationScene } from "./scenes/ObservationScene";
 import { AryabhataScene } from "./scenes/AryabhataScene";
@@ -20,6 +21,11 @@ export const RemotionRoot: React.FC = () => {
         width={WIDTH}
         height={HEIGHT}
       />
+      <Folder name="Repo">
+        <Still id="ProjectBanner" component={ProjectBanner} width={1600} height={800} />
+        <Still id="RootBanner" component={RootBanner} width={1600} height={560} />
+        <Still id="DesignSystem" component={DesignSystem} width={1600} height={790} />
+      </Folder>
       <Folder name="Scenes">
         <Composition
           id="OpeningScene"
