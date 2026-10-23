@@ -39,6 +39,7 @@ category (e.g. Arian Zwegers, CC BY 2.0). The overlay geometry is fitted in
 | `img/moon-ink-2k.png` | Scene 5 drawn lunar diagram | Derived from the LRO map by `tools/make_textures.py` (maria outlines, rims, stipple) | Same as above |
 | `src/data/stars.json` | Scenes 1–2 star charts | Yale Bright Star Catalogue, 5th rev. (Hoffleit & Warren), J2000, via github.com/brettonw/YaleBrightStarCatalog | Public-domain catalogue data |
 | `world-atlas/land-110m.json` (npm) | Earth globes | Natural Earth 1:110m land via `world-atlas` | Natural Earth: public domain |
+| `src/data/isroLaunches.json` | Scene 6 launch chart | Every ISRO orbital launch attempt, 1979–2025 (SLV-3, ASLV, PSLV, GSLV, LVM3, SSLV), compiled from ISRO's launch records (isro.gov.in, *List of launches* / *Launch Missions*) and checked against published flight-count milestones. Counted per decade in `ClosingScene.tsx` | Factual data |
 | `img/paper-grain.png` | Paper texture | Procedural (`tools/make_textures.py`) | Original |
 
 ## Fonts (local, `public/fonts/`; all SIL Open Font License 1.1, from github.com/google/fonts)

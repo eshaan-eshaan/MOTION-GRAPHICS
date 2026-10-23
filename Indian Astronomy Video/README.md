@@ -39,7 +39,7 @@ It doesn't claim that modern Indian spaceflight descends directly from ancient a
 
 <table>
 <tr>
-<td width="33%"><img src="media/gallery/01-question.jpg" alt="The Question"><br><b>01 · The Question</b> <sub>0:00</sub><br><sub>Real stars turn around the north celestial pole. Capella traces its diurnal circle, which becomes a polar sky chart.</sub></td>
+<td width="33%"><img src="media/gallery/01-question.jpg" alt="The Question"><br><b>01 · The Question</b> <sub>0:00</sub><br><sub>Real stars turn around the north celestial pole. Capella traces its diurnal circle, which becomes a polar sky chart. The title builds itself out of dots that spiral from the pole.</sub></td>
 <td width="33%"><img src="media/gallery/02-sky-chart.jpg" alt="Observe: sky chart"><br><b>02 · Observe</b> <sub>0:09</sub><br><sub>An ivory chart of the real Taurus–Orion field: the ecliptic, the Moon's 5°-tilted path, the nodes and four nakshatras.</sub></td>
 <td width="33%"><img src="media/gallery/03-calendar.jpg" alt="Observe: calendar"><br><b>02 · Patterns → Calendars</b><br><sub>The ecliptic wraps into a wheel of 12 solar months, 30 lunar tithis and six ṛtus, and predicts the next full moon.</sub></td>
 </tr>
@@ -55,7 +55,7 @@ It doesn't claim that modern Indian spaceflight descends directly from ancient a
 </tr>
 <tr>
 <td><img src="media/gallery/10-observe-explore.jpg" alt="Observe to explore"><br><b>05 · Observe → Explore</b><br><sub>A hold on Vikram, photographed by Pragyan's NavCam from about 15 m.</sub></td>
-<td><img src="media/gallery/11-route.jpg" alt="Chart and route"><br><b>06 · Reflect</b> <sub>1:23</sub><br><sub>The opening sky chart lines up around Earth with Chandrayaan-3's route: Earth orbits, transfer, lunar orbits.</sub></td>
+<td><img src="media/gallery/11-route.jpg" alt="Chart and route"><br><b>06 · Reflect</b> <sub>1:23</sub><br><sub>A 3D chart of ISRO's orbital launches per decade rises on "tools changed". Then the opening sky chart lines up around Earth with Chandrayaan-3's route.</sub></td>
 <td><img src="media/gallery/12-end-card.jpg" alt="End card"><br><b>06 · End card</b><br><sub>The route becomes an emblem. <i>Observe. Calculate. Explore.</i> light up as each word is spoken.</sub></td>
 </tr>
 </table>
@@ -64,13 +64,14 @@ It doesn't claim that modern Indian spaceflight descends directly from ancient a
 
 | Claim on screen | How it's grounded |
 |---|---|
-| Star charts | Real positions from the **Yale Bright Star Catalogue** (J2000). The ecliptic and the Moon's 5.145° path are computed, not drawn by hand |
+| Star charts | Real positions from the **Yale Bright Star Catalogue** (J2000). The ecliptic and the Moon's 5.145° path are computed, not drawn by hand. The dotted title sits on a strict grid with uniform dots, so it reads as type and never as stars |
 | Capella's arc | An azimuthal projection about the north celestial pole. The whole sky turns as the Earth rotates |
 | Āryabhaṭa | No portrait from his lifetime exists, so the IUCAA statue is **labelled as an artistic representation**. The verse is quoted in Devanagari with a translation |
 | Eclipses | Umbra and penumbra are exact external and internal tangents. Sizes are chosen so both eclipse types work, and the diagram is marked **not to scale** |
 | Samrat Yantra | The gold line is a line fitted to the gnomon edge in the CC0 photograph (`y = 0.6362x − 12.2`). Its ≈27° tilt is Jaipur's latitude, which is a property of the instrument's geometry |
 | Jantar Mantar | "Early 18th century, built by Maharaja Sawai Jai Singh II". Not called ancient or Vedic |
 | Chandrayaan-3 | Soft landing 23 Aug 2023 at **69.37° S, 32.32° E**, *near* the south polar region, not at the pole. Vikram and Pragyan are labelled separately |
+| Launch chart | Bars are counted in code from a flight-by-flight list of all 100 ISRO orbital launch attempts, 1979–2025 ([`isroLaunches.json`](src/data/isroLaunches.json)). Failures included. The partial 2020s bar is marked. Values are labelled on the bars, with no 3D grid that would misread |
 | Mission imagery | ISRO's own photos and footage, uncomposited and captioned with source and date. No invented telemetry or interfaces |
 
 ## Under the hood
@@ -123,8 +124,9 @@ src/
   timeline.ts             scene timing, narration cues, word lookups
   data/cues.json          single source of truth for timing (shared with Python)
   data/stars.json         BSC5 star subsets
+  data/isroLaunches.json  every ISRO orbital launch attempt, 1979–2025 (Scene 6 chart)
   scenes/                 OpeningScene … ClosingScene, handoffs.ts
-  components/             PolarChart, MoonGlobe, MoonOverlay, EarthGlobe, Type, Icons, SceneTransition
+  components/             PolarChart, MoonGlobe, MoonOverlay, EarthGlobe, GrowthChart, PixelTitle, Type, Icons, SceneTransition
   audio/AudioMix.tsx      narration, ducked score, cue-locked SFX
   repo/RepoStills.tsx     banners and design sheet for this README
 public/                   fonts (OFL), images, video, audio: everything the render needs, local only
