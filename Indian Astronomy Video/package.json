@@ -1,0 +1,48 @@
+{
+  "name": "indian-astronomy-film",
+  "version": "1.0.0",
+  "description": "Indian Astronomy: From Ancient Skies to Lunar Exploration (Remotion, 105 s)",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@remotion/bundler": "4.0.538",
+    "@remotion/cli": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/media": "4.0.538",
+    "@remotion/renderer": "4.0.538",
+    "@remotion/transitions": "4.0.538",
+    "d3-geo": "^3.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.538",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.538",
+    "@types/d3-geo": "^3.1.1",
+    "@types/react": "19.2.7",
+    "@types/topojson-client": "^3.1.5",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render": "remotion render IndianAstronomy out/IndianAstronomy.mp4 --codec=h264 --crf=16 --audio-bitrate=320k",
+    "stills": "node tools/stills.mjs",
+    "audio": "python -I tools/generate_vo.py && python -I tools/normalize_vo.py && python -I tools/compose_score.py",
+    "textures": "python -I tools/prepare_images.py && python -I tools/make_textures.py && python -I tools/extract_stars.py"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

@@ -1,0 +1,1050 @@
+{
+ "_meta": {
+  "voice": "hi-IN-SwaraNeural",
+  "rate": "+3%",
+  "engine": "Microsoft Edge neural TTS via edge-tts",
+  "loudness": "-16.0 LUFS integrated per clip"
+ },
+ "s1a": {
+  "id": "s1a",
+  "text": "आज हम Moon तक पहुँच चुके हैं।",
+  "file": "audio/vo/s1a.wav",
+  "duration": 2.976,
+  "words": [
+   {
+    "text": "आज",
+    "start": 0.1,
+    "end": 0.451958
+   },
+   {
+    "text": "हम",
+    "start": 0.464083,
+    "end": 0.609708
+   },
+   {
+    "text": "Moon",
+    "start": 0.621833,
+    "end": 0.973791
+   },
+   {
+    "text": "तक",
+    "start": 0.985916,
+    "end": 1.180082
+   },
+   {
+    "text": "पहुँच",
+    "start": 1.19225,
+    "end": 1.471375
+   },
+   {
+    "text": "चुके",
+    "start": 1.4835,
+    "end": 1.762625
+   },
+   {
+    "text": "हैं",
+    "start": 1.77475,
+    "end": 2.102416
+   }
+  ]
+ },
+ "s1b": {
+  "id": "s1b",
+  "text": "लेकिन एक सवाल है... आसमान को समझने का सफ़र शुरू कैसे हुआ?",
+  "file": "audio/vo/s1b.wav",
+  "duration": 6.216,
+  "words": [
+   {
+    "text": "लेकिन",
+    "start": 0.1,
+    "end": 0.585416
+   },
+   {
+    "text": "एक",
+    "start": 0.597583,
+    "end": 0.767499
+   },
+   {
+    "text": "सवाल",
+    "start": 0.779625,
+    "end": 1.155833
+   },
+   {
+    "text": "है",
+    "start": 1.167958,
+    "end": 1.483499
+   },
+   {
+    "text": "आसमान",
+    "start": 2.331541,
+    "end": 2.974749
+   },
+   {
+    "text": "को",
+    "start": 2.986875,
+    "end": 3.120375
+   },
+   {
+    "text": "समझने",
+    "start": 3.132541,
+    "end": 3.642249
+   },
+   {
+    "text": "का",
+    "start": 3.654375,
+    "end": 3.824291
+   },
+   {
+    "text": "सफ़र",
+    "start": 3.836416,
+    "end": 4.236916
+   },
+   {
+    "text": "शुरू",
+    "start": 4.249041,
+    "end": 4.588832
+   },
+   {
+    "text": "कैसे",
+    "start": 4.600958,
+    "end": 4.916499
+   },
+   {
+    "text": "हुआ",
+    "start": 4.928625,
+    "end": 5.377666
+   }
+  ]
+ },
+ "s2a": {
+  "id": "s2a",
+  "text": "सदियों तक, observers ने Sun, Moon और stars के patterns को track किया।",
+  "file": "audio/vo/s2a.wav",
+  "duration": 6.408,
+  "words": [
+   {
+    "text": "सदियों",
+    "start": 0.1,
+    "end": 0.706791
+   },
+   {
+    "text": "तक",
+    "start": 0.718916,
+    "end": 1.155791
+   },
+   {
+    "text": "observers",
+    "start": 1.252916,
+    "end": 1.981082
+   },
+   {
+    "text": "ने",
+    "start": 1.993208,
+    "end": 2.150958
+   },
+   {
+    "text": "Sun",
+    "start": 2.163125,
+    "end": 2.745666
+   },
+   {
+    "text": "Moon",
+    "start": 2.927666,
+    "end": 3.279624
+   },
+   {
+    "text": "और",
+    "start": 3.29175,
+    "end": 3.485916
+   },
+   {
+    "text": "stars",
+    "start": 3.498041,
+    "end": 3.910666
+   },
+   {
+    "text": "के",
+    "start": 3.922833,
+    "end": 4.068458
+   },
+   {
+    "text": "patterns",
+    "start": 4.080583,
+    "end": 4.602416
+   },
+   {
+    "text": "को",
+    "start": 4.614583,
+    "end": 4.796624
+   },
+   {
+    "text": "track",
+    "start": 4.80875,
+    "end": 5.136416
+   },
+   {
+    "text": "किया",
+    "start": 5.148541,
+    "end": 5.561166
+   }
+  ]
+ },
+ "s2b": {
+  "id": "s2b",
+  "text": "इन observations से calendars बने, seasons को समझने में मदद मिली, और celestial cycles को predict करने के तरीक़े develop हुए।",
+  "file": "audio/vo/s2b.wav",
+  "duration": 9.552,
+  "words": [
+   {
+    "text": "इन",
+    "start": 0.1,
+    "end": 0.342708
+   },
+   {
+    "text": "observations",
+    "start": 0.354875,
+    "end": 1.119458
+   },
+   {
+    "text": "से",
+    "start": 1.131541,
+    "end": 1.289291
+   },
+   {
+    "text": "calendars",
+    "start": 1.301458,
+    "end": 1.932541
+   },
+   {
+    "text": "बने",
+    "start": 1.944666,
+    "end": 2.345166
+   },
+   {
+    "text": "seasons",
+    "start": 2.551458,
+    "end": 3.182541
+   },
+   {
+    "text": "को",
+    "start": 3.194666,
+    "end": 3.328166
+   },
+   {
+    "text": "समझने",
+    "start": 3.340291,
+    "end": 3.825707
+   },
+   {
+    "text": "में",
+    "start": 3.837875,
+    "end": 3.971375
+   },
+   {
+    "text": "मदद",
+    "start": 3.9835,
+    "end": 4.323291
+   },
+   {
+    "text": "मिली",
+    "start": 4.335416,
+    "end": 4.760166
+   },
+   {
+    "text": "और",
+    "start": 4.978625,
+    "end": 5.197083
+   },
+   {
+    "text": "celestial",
+    "start": 5.209208,
+    "end": 5.828124
+   },
+   {
+    "text": "cycles",
+    "start": 5.840291,
+    "end": 6.362124
+   },
+   {
+    "text": "को",
+    "start": 6.374291,
+    "end": 6.532041
+   },
+   {
+    "text": "predict",
+    "start": 6.544166,
+    "end": 6.932499
+   },
+   {
+    "text": "करने",
+    "start": 6.944666,
+    "end": 7.260207
+   },
+   {
+    "text": "के",
+    "start": 7.272333,
+    "end": 7.430083
+   },
+   {
+    "text": "तरीक़े",
+    "start": 7.44225,
+    "end": 7.879125
+   },
+   {
+    "text": "develop",
+    "start": 7.89125,
+    "end": 8.316
+   },
+   {
+    "text": "हुए",
+    "start": 8.328166,
+    "end": 8.716499
+   }
+  ]
+ },
+ "s3a": {
+  "id": "s3a",
+  "text": "फिर mathematics ने observations को deeper explanations दी।",
+  "file": "audio/vo/s3a.wav",
+  "duration": 4.8,
+  "words": [
+   {
+    "text": "फिर",
+    "start": 0.1,
+    "end": 0.439791
+   },
+   {
+    "text": "mathematics",
+    "start": 0.451958,
+    "end": 1.167958
+   },
+   {
+    "text": "ने",
+    "start": 1.180083,
+    "end": 1.349999
+   },
+   {
+    "text": "observations",
+    "start": 1.362125,
+    "end": 2.163083
+   },
+   {
+    "text": "को",
+    "start": 2.17525,
+    "end": 2.345166
+   },
+   {
+    "text": "deeper",
+    "start": 2.357291,
+    "end": 2.769916
+   },
+   {
+    "text": "explanations",
+    "start": 2.782041,
+    "end": 3.595166
+   },
+   {
+    "text": "दी",
+    "start": 3.607291,
+    "end": 3.947082
+   }
+  ]
+ },
+ "s3b": {
+  "id": "s3b",
+  "text": "आर्यभट ने Earth के rotation पर लिखा, और eclipses को supernatural events नहीं, बल्कि shadows के through explain किया।",
+  "file": "audio/vo/s3b.wav",
+  "duration": 9.264,
+  "words": [
+   {
+    "text": "आर्यभट",
+    "start": 0.1,
+    "end": 0.694666
+   },
+   {
+    "text": "ने",
+    "start": 0.706791,
+    "end": 0.937374
+   },
+   {
+    "text": "Earth",
+    "start": 0.9495,
+    "end": 1.252916
+   },
+   {
+    "text": "के",
+    "start": 1.265041,
+    "end": 1.410666
+   },
+   {
+    "text": "rotation",
+    "start": 1.422833,
+    "end": 1.956833
+   },
+   {
+    "text": "पर",
+    "start": 1.968916,
+    "end": 2.126666
+   },
+   {
+    "text": "लिखा",
+    "start": 2.138833,
+    "end": 2.648541
+   },
+   {
+    "text": "और",
+    "start": 2.867,
+    "end": 3.134
+   },
+   {
+    "text": "eclipses",
+    "start": 3.146125,
+    "end": 3.777208
+   },
+   {
+    "text": "को",
+    "start": 3.789333,
+    "end": 3.959249
+   },
+   {
+    "text": "supernatural",
+    "start": 3.971375,
+    "end": 4.7845
+   },
+   {
+    "text": "events",
+    "start": 4.796583,
+    "end": 5.197083
+   },
+   {
+    "text": "नहीं",
+    "start": 5.209208,
+    "end": 5.767458
+   },
+   {
+    "text": "बल्कि",
+    "start": 6.010208,
+    "end": 6.459249
+   },
+   {
+    "text": "shadows",
+    "start": 6.471375,
+    "end": 7.005375
+   },
+   {
+    "text": "के",
+    "start": 7.017458,
+    "end": 7.187374
+   },
+   {
+    "text": "through",
+    "start": 7.1995,
+    "end": 7.454375
+   },
+   {
+    "text": "explain",
+    "start": 7.4665,
+    "end": 8.02475
+   },
+   {
+    "text": "किया",
+    "start": 8.036875,
+    "end": 8.413083
+   }
+  ]
+ },
+ "s4a": {
+  "id": "s4a",
+  "text": "Centuries बाद, जंतर मंतर जैसे observatories ने celestial positions को measure करने के लिए enormous instruments use किए।",
+  "file": "audio/vo/s4a.wav",
+  "duration": 9.36,
+  "words": [
+   {
+    "text": "Centuries",
+    "start": 0.1,
+    "end": 0.888833
+   },
+   {
+    "text": "बाद",
+    "start": 0.900958,
+    "end": 1.447083
+   },
+   {
+    "text": "जंतर",
+    "start": 1.629125,
+    "end": 2.150958
+   },
+   {
+    "text": "मंतर",
+    "start": 2.163125,
+    "end": 2.624291
+   },
+   {
+    "text": "जैसे",
+    "start": 2.636416,
+    "end": 3.036916
+   },
+   {
+    "text": "observatories",
+    "start": 3.049041,
+    "end": 3.849999
+   },
+   {
+    "text": "ने",
+    "start": 3.862125,
+    "end": 4.019875
+   },
+   {
+    "text": "celestial",
+    "start": 4.032041,
+    "end": 4.663124
+   },
+   {
+    "text": "positions",
+    "start": 4.67525,
+    "end": 5.2335
+   },
+   {
+    "text": "को",
+    "start": 5.245625,
+    "end": 5.403375
+   },
+   {
+    "text": "measure",
+    "start": 5.415541,
+    "end": 5.791749
+   },
+   {
+    "text": "करने",
+    "start": 5.803875,
+    "end": 6.107291
+   },
+   {
+    "text": "के",
+    "start": 6.119416,
+    "end": 6.228624
+   },
+   {
+    "text": "लिए",
+    "start": 6.240791,
+    "end": 6.568457
+   },
+   {
+    "text": "enormous",
+    "start": 6.580583,
+    "end": 7.126708
+   },
+   {
+    "text": "instruments",
+    "start": 7.138833,
+    "end": 7.769916
+   },
+   {
+    "text": "use",
+    "start": 7.782041,
+    "end": 8.073291
+   },
+   {
+    "text": "किए",
+    "start": 8.085416,
+    "end": 8.510166
+   }
+  ]
+ },
+ "s4b": {
+  "id": "s4b",
+  "text": "यहाँ architecture ख़ुद एक scientific tool बन जाता है।",
+  "file": "audio/vo/s4b.wav",
+  "duration": 4.416,
+  "words": [
+   {
+    "text": "यहाँ",
+    "start": 0.1,
+    "end": 0.536875
+   },
+   {
+    "text": "architecture",
+    "start": 0.549041,
+    "end": 1.313624
+   },
+   {
+    "text": "ख़ुद",
+    "start": 1.325708,
+    "end": 1.568416
+   },
+   {
+    "text": "एक",
+    "start": 1.580583,
+    "end": 1.762624
+   },
+   {
+    "text": "scientific",
+    "start": 1.77475,
+    "end": 2.49075
+   },
+   {
+    "text": "tool",
+    "start": 2.502916,
+    "end": 2.721374
+   },
+   {
+    "text": "बन",
+    "start": 2.7335,
+    "end": 2.939791
+   },
+   {
+    "text": "जाता",
+    "start": 2.951958,
+    "end": 3.279624
+   },
+   {
+    "text": "है",
+    "start": 3.29175,
+    "end": 3.570875
+   }
+  ]
+ },
+ "s5a": {
+  "id": "s5a",
+  "text": "और आज, वही curiosity एक नए scale पर है।",
+  "file": "audio/vo/s5a.wav",
+  "duration": 4.632,
+  "words": [
+   {
+    "text": "और",
+    "start": 0.1,
+    "end": 0.5005
+   },
+   {
+    "text": "आज",
+    "start": 0.512625,
+    "end": 1.095166
+   },
+   {
+    "text": "वही",
+    "start": 1.252916,
+    "end": 1.592707
+   },
+   {
+    "text": "curiosity",
+    "start": 1.604875,
+    "end": 2.393708
+   },
+   {
+    "text": "एक",
+    "start": 2.405833,
+    "end": 2.624291
+   },
+   {
+    "text": "नए",
+    "start": 2.636416,
+    "end": 2.964082
+   },
+   {
+    "text": "scale",
+    "start": 2.976208,
+    "end": 3.315999
+   },
+   {
+    "text": "पर",
+    "start": 3.328166,
+    "end": 3.461666
+   },
+   {
+    "text": "है",
+    "start": 3.473791,
+    "end": 3.777207
+   }
+  ]
+ },
+ "s5b": {
+  "id": "s5b",
+  "text": "चंद्रयान-3 ने 23 August 2023 को Moon के south polar region के पास successful soft landing की।",
+  "file": "audio/vo/s5b.wav",
+  "duration": 8.424,
+  "words": [
+   {
+    "text": "चंद्रयान-3",
+    "start": 0.1,
+    "end": 1.2165
+   },
+   {
+    "text": "ने",
+    "start": 1.228625,
+    "end": 1.434916
+   },
+   {
+    "text": "23 August 2023",
+    "start": 1.447083,
+    "end": 3.376666
+   },
+   {
+    "text": "को",
+    "start": 3.388833,
+    "end": 3.534458
+   },
+   {
+    "text": "Moon",
+    "start": 3.546583,
+    "end": 3.874249
+   },
+   {
+    "text": "के",
+    "start": 3.886416,
+    "end": 4.019916
+   },
+   {
+    "text": "south",
+    "start": 4.032041,
+    "end": 4.432541
+   },
+   {
+    "text": "polar",
+    "start": 4.444666,
+    "end": 4.796624
+   },
+   {
+    "text": "region",
+    "start": 4.80875,
+    "end": 5.172833
+   },
+   {
+    "text": "के",
+    "start": 5.184958,
+    "end": 5.342708
+   },
+   {
+    "text": "पास",
+    "start": 5.354875,
+    "end": 5.670416
+   },
+   {
+    "text": "successful",
+    "start": 5.682541,
+    "end": 6.349999
+   },
+   {
+    "text": "soft",
+    "start": 6.362125,
+    "end": 6.726208
+   },
+   {
+    "text": "landing",
+    "start": 6.738333,
+    "end": 7.199499
+   },
+   {
+    "text": "की",
+    "start": 7.211666,
+    "end": 7.575749
+   }
+  ]
+ },
+ "s5c": {
+  "id": "s5c",
+  "text": "विक्रम lander और प्रज्ञान rover ने lunar surface पर scientific exploration की।",
+  "file": "audio/vo/s5c.wav",
+  "duration": 6.024,
+  "words": [
+   {
+    "text": "विक्रम",
+    "start": 0.1,
+    "end": 0.597583
+   },
+   {
+    "text": "lander",
+    "start": 0.609708,
+    "end": 1.034458
+   },
+   {
+    "text": "और",
+    "start": 1.046583,
+    "end": 1.265041
+   },
+   {
+    "text": "प्रज्ञान",
+    "start": 1.277166,
+    "end": 1.762582
+   },
+   {
+    "text": "rover",
+    "start": 1.77475,
+    "end": 2.114541
+   },
+   {
+    "text": "ने",
+    "start": 2.126708,
+    "end": 2.272333
+   },
+   {
+    "text": "lunar",
+    "start": 2.284458,
+    "end": 2.697083
+   },
+   {
+    "text": "surface",
+    "start": 2.709208,
+    "end": 3.194624
+   },
+   {
+    "text": "पर",
+    "start": 3.206791,
+    "end": 3.388832
+   },
+   {
+    "text": "scientific",
+    "start": 3.400958,
+    "end": 4.080583
+   },
+   {
+    "text": "exploration",
+    "start": 4.092708,
+    "end": 4.820874
+   },
+   {
+    "text": "की",
+    "start": 4.833,
+    "end": 5.184958
+   }
+  ]
+ },
+ "s5d": {
+  "id": "s5d",
+  "text": "अब हम सिर्फ़ sky को observe नहीं करते... हम उसे explore भी करते हैं।",
+  "file": "audio/vo/s5d.wav",
+  "duration": 6.24,
+  "words": [
+   {
+    "text": "अब",
+    "start": 0.1,
+    "end": 0.318458
+   },
+   {
+    "text": "हम",
+    "start": 0.330583,
+    "end": 0.549041
+   },
+   {
+    "text": "सिर्फ़",
+    "start": 0.561166,
+    "end": 0.864582
+   },
+   {
+    "text": "sky",
+    "start": 0.876708,
+    "end": 1.216499
+   },
+   {
+    "text": "को",
+    "start": 1.228625,
+    "end": 1.422791
+   },
+   {
+    "text": "observe",
+    "start": 1.434958,
+    "end": 1.944666
+   },
+   {
+    "text": "नहीं",
+    "start": 1.956791,
+    "end": 2.223791
+   },
+   {
+    "text": "करते",
+    "start": 2.235916,
+    "end": 2.636416
+   },
+   {
+    "text": "हम",
+    "start": 3.472333,
+    "end": 3.751458
+   },
+   {
+    "text": "उसे",
+    "start": 3.763583,
+    "end": 4.030583
+   },
+   {
+    "text": "explore",
+    "start": 4.042708,
+    "end": 4.588833
+   },
+   {
+    "text": "भी",
+    "start": 4.600958,
+    "end": 4.746583
+   },
+   {
+    "text": "करते",
+    "start": 4.75875,
+    "end": 5.086416
+   },
+   {
+    "text": "हैं",
+    "start": 5.098541,
+    "end": 5.389791
+   }
+  ]
+ },
+ "s6a": {
+  "id": "s6a",
+  "text": "Tools बदले, methods बदले, लेकिन सवाल वही रहा: universe काम कैसे करता है?",
+  "file": "audio/vo/s6a.wav",
+  "duration": 7.176,
+  "words": [
+   {
+    "text": "Tools",
+    "start": 0.1,
+    "end": 0.549041
+   },
+   {
+    "text": "बदले",
+    "start": 0.561166,
+    "end": 1.070874
+   },
+   {
+    "text": "methods",
+    "start": 1.289333,
+    "end": 1.811166
+   },
+   {
+    "text": "बदले",
+    "start": 1.823291,
+    "end": 2.345124
+   },
+   {
+    "text": "लेकिन",
+    "start": 2.478625,
+    "end": 2.903375
+   },
+   {
+    "text": "सवाल",
+    "start": 2.915541,
+    "end": 3.352416
+   },
+   {
+    "text": "वही",
+    "start": 3.364583,
+    "end": 3.619458
+   },
+   {
+    "text": "रहा",
+    "start": 3.631541,
+    "end": 4.019874
+   },
+   {
+    "text": "universe",
+    "start": 4.238333,
+    "end": 4.966499
+   },
+   {
+    "text": "काम",
+    "start": 4.978625,
+    "end": 5.318416
+   },
+   {
+    "text": "कैसे",
+    "start": 5.330583,
+    "end": 5.694666
+   },
+   {
+    "text": "करता",
+    "start": 5.706791,
+    "end": 6.046582
+   },
+   {
+    "text": "है",
+    "start": 6.05875,
+    "end": 6.337875
+   }
+  ]
+ },
+ "s6b": {
+  "id": "s6b",
+  "text": "Indian astronomy की journey हमें याद दिलाती है... observe करो, calculate करो, और explore करते रहो।",
+  "file": "audio/vo/s6b.wav",
+  "duration": 8.184,
+  "words": [
+   {
+    "text": "Indian",
+    "start": 0.1,
+    "end": 0.536875
+   },
+   {
+    "text": "astronomy",
+    "start": 0.549041,
+    "end": 1.277207
+   },
+   {
+    "text": "की",
+    "start": 1.289333,
+    "end": 1.459249
+   },
+   {
+    "text": "journey",
+    "start": 1.471375,
+    "end": 1.811166
+   },
+   {
+    "text": "हमें",
+    "start": 1.823291,
+    "end": 2.187374
+   },
+   {
+    "text": "याद",
+    "start": 2.1995,
+    "end": 2.515041
+   },
+   {
+    "text": "दिलाती",
+    "start": 2.527166,
+    "end": 2.976207
+   },
+   {
+    "text": "है",
+    "start": 2.988333,
+    "end": 3.218916
+   },
+   {
+    "text": "observe",
+    "start": 3.388833,
+    "end": 3.947083
+   },
+   {
+    "text": "करो",
+    "start": 3.959208,
+    "end": 4.408249
+   },
+   {
+    "text": "calculate",
+    "start": 4.566,
+    "end": 5.197083
+   },
+   {
+    "text": "करो",
+    "start": 5.209208,
+    "end": 5.658249
+   },
+   {
+    "text": "और",
+    "start": 5.779625,
+    "end": 6.022333
+   },
+   {
+    "text": "explore",
+    "start": 6.034458,
+    "end": 6.604833
+   },
+   {
+    "text": "करते",
+    "start": 6.617,
+    "end": 6.90825
+   },
+   {
+    "text": "रहो",
+    "start": 6.920375,
+    "end": 7.345125
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+  "_doc": "Single source of truth for the film's timing. Seconds are global (film) time at 30 fps. Read by src/timeline.ts and tools/compose_score.py.",
+  "fps": 30,
+  "durationInFrames": 3150,
+  "cuts": [
+    9.5,
+    25.0,
+    42.0,
+    56.5,
+    83.5
+  ],
+  "transitionFrames": [
+    24,
+    12,
+    14,
+    12,
+    20
+  ],
+  "vo": {
+    "s1a": 0.9,
+    "s1b": 3.45,
+    "s2a": 9.8,
+    "s2b": 15.75,
+    "s3a": 25.5,
+    "s3b": 30.3,
+    "s4a": 42.6,
+    "s4b": 51.6,
+    "s5a": 57.0,
+    "s5b": 62.5,
+    "s5c": 70.3,
+    "s5d": 76.4,
+    "s6a": 84.3,
+    "s6b": 91.6
+  },
+  "music": {
+    "bpm": 120,
+    "titleHit": 6.2,
+    "observe": 9.5,
+    "calculate": 25.0,
+    "measure": 42.0,
+    "anticipation": 56.5,
+    "impact": 62.0,
+    "heroLift": 75.5,
+    "reflect": 83.5,
+    "finalChord": 99.0
+  }
+}
