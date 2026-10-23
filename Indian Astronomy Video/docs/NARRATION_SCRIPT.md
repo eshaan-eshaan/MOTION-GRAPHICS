@@ -45,7 +45,8 @@ predicted full moon ("predict").
 | s3a | 00:25.5 → 00:29.5 | Phir mathematics ne observations ko deeper explanations di. | फिर mathematics ने observations को deeper explanations दी। |
 | s3b | 00:30.3 → 00:38.7 | Aryabhata ne Earth ke rotation par likha, aur eclipses ko supernatural events nahi, balki shadows ke through explain kiya. | आर्यभट ने Earth के rotation पर लिखा, और eclipses को supernatural events नहीं, बल्कि shadows के through explain किया। |
 
-On screen: MATHEMATICS MEETS THE SKY (jyā construction) · **ARYABHATA** (statue clearly labelled as
+On screen: MATHEMATICS MEETS THE SKY (jyā construction) · Āryabhaṭa's 24-value jyā table drawing
+itself as a gradient line, ending on **R = 3438′** (00:27.5 – 00:30.5) · **ARYABHATA** (statue clearly labelled as
 an artistic representation) · Āryabhaṭīya, Golapāda verse 9 (Devanagari and English) · sidereal
 rotation 23ʰ 56ᵐ 4.1ˢ · ~~SUPERNATURAL~~ SHADOWS. · lunar and solar eclipse geometry.
 
@@ -69,6 +70,8 @@ On screen: **JANTAR MANTAR, JAIPUR** · Early 18th century · built by Maharaja 
 | s5c | 01:10.3 → 01:15.5 | Vikram lander aur Pragyan rover ne lunar surface par scientific exploration ki. | विक्रम lander और प्रज्ञान rover ने lunar surface पर scientific exploration की। |
 | s5d | 01:16.4 → 01:21.8 | Ab hum sirf sky ko observe nahi karte—hum usse explore bhi karte hain. | अब हम सिर्फ़ sky को observe नहीं करते... हम उसे explore भी करते हैं। |
 
+On "naye scale": **EARTH TO MOON · AVERAGE DISTANCE 384,400 km** rolls up like an odometer beside the drawn
+Moon (00:58.1 – 00:59.5), with the chip *≈ 30 Earths, side by side*, and clears before 01:02.0.
 The score's impact and the **CHANDRAYAAN-3** title land at 01:02.0. The narrator names the
 mission half a second later, so the musical payoff isn't masked. On screen: **23 AUGUST 2023** ·
 landing site 69.37° S · 32.32° E, "near the south polar region, not at the pole itself" · ISRO
@@ -92,6 +95,8 @@ the frame holds to 01:45.0.
 ### Facts used on screen, and their sources
 
 - Āryabhaṭa, born 476 CE; the *Āryabhaṭīya* (Golapāda verse 9, boat analogy for the Earth's rotation): Shukla & Sarma (1976) via Plofker (2009); verse text as given in A. Parakh, *A Note on Aryabhata's Principle of Relativity* (arXiv:physics/0610095).
+- Jyā table: Āryabhaṭīya, Gītikāpada 12, gives 24 sine differences in arcminutes (225, 224, 222 … 22, 7) for arcs in steps of 3°45′. Their running sums are the tabulated jyā values, and all 24 add up to 3438, the radius in arcminutes (Shukla & Sarma 1976; Plofker 2009). The line is drawn through exactly those 24 values, listed in [`src/data/jyaTable.json`](../src/data/jyaTable.json).
+- Earth–Moon distance: 384,400 km is the mean centre-to-centre distance (it ranges from about 356,500 to 406,700 km). Earth's mean diameter is 12,742 km, so the distance is about 30 Earth diameters (384,400 / 12,742 ≈ 30.2). The figure rolls up and stops: it doesn't keep ticking, because it isn't a live value.
 - Sidereal rotation 23 h 56 min 4.1 s (modern 23 h 56 min 4.091 s): R. C. Gupta, "Āryabhaṭa", in Selin (ed.), *Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures* (1997), as cited on Wikipedia.
 - *Jyā* (half-chord) tabulated in the Āryabhaṭīya; the word became Arabic *jiba* and Latin *sinus*.
 - Jantar Mantar, Jaipur: built by Maharaja Sawai Jai Singh II in the early 18th century (instruments c. 1728–1738), UNESCO World Heritage Site (2010). The gnomon's hypotenuse is parallel to Earth's axis, so its tilt equals the local latitude (Jaipur ≈ 26.9° N). This is a geometric property of an equatorial sundial, not a measured claim.

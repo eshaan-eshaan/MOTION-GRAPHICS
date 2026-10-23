@@ -1,11 +1,13 @@
 // Scene 3 — Calculate. The calendar circle becomes a jyā (half-chord) construction;
 // Āryabhaṭa is introduced with a clearly labelled artistic statue and his own words on
 // the Earth's rotation; the circle becomes a rotating Earth against fixed stars; then a
-// separate, geometrically constructed eclipse diagram (lunar, then solar).
+// separate, geometrically constructed eclipse diagram (lunar, then solar). Under the jyā
+// construction, Āryabhaṭa's own 24-value jyā table draws itself as a line: the sine curve.
 import type React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Paper } from "../components/Backgrounds";
 import { EarthGlobe } from "../components/EarthGlobe";
+import { LineDraw } from "../components/LineDraw";
 import { Eyebrow, KineticTitle, SourceCaption, Tag } from "../components/Type";
 import {
   externalTangent,
@@ -19,7 +21,14 @@ import {
 } from "../lib/geometry";
 import { C, EASE, F, clamp } from "../theme";
 import { SCENES, cue } from "../timeline";
+import jya from "../data/jyaTable.json";
 import { CAL, CAL_HANDOFF_R, GNOMON_SCREEN } from "./handoffs";
+
+// Tabulated jyā values (running sums of the sine differences) against arc in degrees.
+const JYA_POINTS: [number, number][] = jya.differences.reduce<[number, number][]>(
+  (acc, d, i) => [...acc, [(i + 1) * jya.stepDeg, acc[acc.length - 1][1] + d]],
+  [[0, 0]],
+);
 
 // Eclipse construction (not to scale, but every line is a true tangent for these sizes,
 // and the sizes are chosen so Earth's umbra can hold the Moon and the Moon's umbra reaches Earth).
@@ -276,6 +285,22 @@ export const AryabhataScene: React.FC = () => {
             The <i>Āryabhaṭīya</i> tabulates the <i>jyā</i>, the half-chord of a circle and the ancestor of
             today’s sine.
           </div>
+          {/* Āryabhaṭa's jyā table, drawn as a line */}
+          <Tag x={140} y={640} at={80} color={C.terracotta} size={17}>
+            JYĀ TABLE · ĀRYABHAṬĪYA, GĪTIKĀPADA 12
+          </Tag>
+          <LineDraw
+            id="jya"
+            data={JYA_POINTS}
+            xDomain={[0, 90]}
+            yDomain={[0, jya.radius]}
+            box={{ x: 140, y: 700, w: 600, h: 200 }}
+            at={80}
+            draw={42}
+            xTicks={[0, 30, 60, 90].map((v) => ({ v, label: `${v}°` }))}
+            yTicks={[1000, 2000, 3000]}
+            chip={`R = ${jya.radius}′`}
+          />
           <Tag x={A[0] + 18} y={(A[1] + M[1]) / 2 - 16} at={74} color={C.gold} size={24}>
             JYĀ
           </Tag>

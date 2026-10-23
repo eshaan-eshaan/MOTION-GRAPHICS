@@ -1,13 +1,15 @@
 // Scene 5 — Explore (hero). The measured circle becomes a drawn lunar diagram, the
 // drawing becomes a lit globe in deep space, the globe turns to the south polar region and
 // the landing site, the camera pushes in to ISRO's own approach footage, then the Vikram
-// lander and Pragyan rover in authentic mission imagery, holding on Vikram.
+// lander and Pragyan rover in authentic mission imagery, holding on Vikram. On "a new
+// scale", the Earth–Moon distance rolls up beside the drawn Moon.
 import type React from "react";
 import { Video } from "@remotion/media";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Night, Paper } from "../components/Backgrounds";
 import { MoonGlobe } from "../components/MoonGlobe";
 import { LANDING_SITE, MoonOverlay, moonPoint } from "../components/MoonOverlay";
+import { NumberRoll } from "../components/NumberRoll";
 import { Eyebrow, KineticTitle, SourceCaption, Tag } from "../components/Type";
 import { lerp } from "../lib/geometry";
 import { C, EASE, F, clamp } from "../theme";
@@ -15,6 +17,51 @@ import { MUSIC, SCENES, cue, local, sec } from "../timeline";
 import { MOON_OUTLINE } from "./handoffs";
 
 const PLATE = { w: 760, h: 690, top: 150 };
+
+// Mean Earth–Moon distance (centre to centre) and Earth's mean diameter, in km.
+const MOON_DISTANCE_KM = 384400;
+const EARTH_DIAMETER_KM = 12742;
+
+/** Label, rolling figure and comparison chip; drawn once for paper and once for night. */
+const DistanceRoll: React.FC<{ at: number; ink: string; soft: string; chipBg: string; chipInk: string; opacity: number }> = ({
+  at,
+  ink,
+  soft,
+  chipBg,
+  chipInk,
+  opacity,
+}) => {
+  const frame = useCurrentFrame();
+  const chip = interpolate(frame, [at + 44, at + 58], [0, 1], { ...clamp, easing: EASE.out });
+  return (
+    <div style={{ position: "absolute", left: 140, top: 404, opacity }}>
+      <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 18, letterSpacing: "0.2em", color: soft, opacity: interpolate(frame, [at - 6, at + 6], [0, 1], clamp) }}>
+        EARTH TO MOON · AVERAGE DISTANCE
+      </div>
+      <div style={{ marginTop: 14 }}>
+        <NumberRoll value={MOON_DISTANCE_KM} at={at} duration={42} size={88} color={ink} unit="km" unitColor={soft} />
+      </div>
+      <div
+        style={{
+          display: "inline-block",
+          marginTop: 22,
+          padding: "10px 18px",
+          borderRadius: 10,
+          backgroundColor: chipBg,
+          color: chipInk,
+          fontFamily: F.body,
+          fontWeight: 600,
+          fontSize: 22,
+          letterSpacing: "0.02em",
+          opacity: chip,
+          translate: `0px ${(1 - chip) * 10}px`,
+        }}
+      >
+        ≈ {Math.round(MOON_DISTANCE_KM / EARTH_DIAMETER_KM)} Earths, side by side
+      </div>
+    </div>
+  );
+};
 const LABEL_X = 1010;
 const LABEL_Y = 770;
 
@@ -57,6 +104,7 @@ export const ChandrayaanScene: React.FC = () => {
   const pole = moonPoint(gC[0], gC[1], gR, lat0, lon0, -90, 0);
   const impactPulse = ease(t.c3, t.c3 + 26, EASE.out);
   const labelsOut = 1 - ease(t.south + 38, t.south + 48);
+  const distanceOut = 1 - ease(t.c3 - 22, t.c3 - 8);
   const sunBoost = 1 + 0.18 * Math.max(0, 1 - Math.abs(frame - t.c3 - 2) / 14);
 
   // ---------------------------------------------------------------- footage + plates
@@ -75,8 +123,12 @@ export const ChandrayaanScene: React.FC = () => {
   return (
     <AbsoluteFill>
       <Paper />
+      {/* distance roll, lands on "scale". The ink copy sits on paper and the ivory copy inside
+          the night iris, so its colour flips exactly at the iris edge; gone before the title hit. */}
+      <DistanceRoll at={t.curiosity - 14} ink={C.navy} soft={C.inkSoft} chipBg="rgba(197,139,54,0.18)" chipInk={C.terracotta} opacity={distanceOut} />
       <AbsoluteFill style={{ clipPath: `circle(${lerp(MOON_OUTLINE.r * 0.9, 2300, night)}px at ${baseC[0]}px ${baseC[1]}px)`, opacity: night > 0 ? 1 : 0 }}>
         <Night stars={0.75} />
+        <DistanceRoll at={t.curiosity - 14} ink={C.ivory} soft="rgba(245,235,221,0.7)" chipBg="rgba(217,169,92,0.2)" chipInk={C.goldSoft} opacity={distanceOut} />
       </AbsoluteFill>
 
       {/* ---------------- globe ---------------- */}

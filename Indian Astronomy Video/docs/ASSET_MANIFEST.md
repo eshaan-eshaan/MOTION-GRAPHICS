@@ -37,6 +37,7 @@ category (e.g. Arian Zwegers, CC BY 2.0). The overlay geometry is fitted in
 |---|---|---|---|
 | `img/moon-lroc-2k.jpg` | Scene 5 globe, Scene 6 horizon | NASA SVS CGI Moon Kit, `lroc_color_poles_4k.tif` (svs.gsfc.nasa.gov/4720), resized to 2048 × 1024 | NASA media; credit "NASA's Scientific Visualization Studio" (on screen and in credits). The map is optimised for looks; the globe is a lit visualisation, captioned as such. |
 | `img/moon-ink-2k.png` | Scene 5 drawn lunar diagram | Derived from the LRO map by `tools/make_textures.py` (maria outlines, rims, stipple) | Same as above |
+| `src/data/jyaTable.json` | Scene 3 jyā line | Āryabhaṭa's 24 sine differences, *Āryabhaṭīya* Gītikāpada 12 (Shukla & Sarma 1976; Plofker 2009) | Historical text (public domain) |
 | `src/data/stars.json` | Scenes 1–2 star charts | Yale Bright Star Catalogue, 5th rev. (Hoffleit & Warren), J2000, via github.com/brettonw/YaleBrightStarCatalog | Public-domain catalogue data |
 | `world-atlas/land-110m.json` (npm) | Earth globes | Natural Earth 1:110m land via `world-atlas` | Natural Earth: public domain |
 | `src/data/isroLaunches.json` | Scene 6 launch chart | Every ISRO orbital launch attempt, 1979–2025 (SLV-3, ASLV, PSLV, GSLV, LVM3, SSLV), compiled from ISRO's launch records (isro.gov.in, *List of launches* / *Launch Missions*) and checked against published flight-count milestones. Counted per decade in `ClosingScene.tsx` | Factual data |

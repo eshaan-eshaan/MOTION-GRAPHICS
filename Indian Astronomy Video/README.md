@@ -44,13 +44,13 @@ It doesn't claim that modern Indian spaceflight descends directly from ancient a
 <td width="33%"><img src="media/gallery/03-calendar.jpg" alt="Observe: calendar"><br><b>02 · Patterns → Calendars</b><br><sub>The ecliptic wraps into a wheel of 12 solar months, 30 lunar tithis and six ṛtus, and predicts the next full moon.</sub></td>
 </tr>
 <tr>
-<td><img src="media/gallery/04-aryabhata.jpg" alt="Aryabhata"><br><b>03 · Calculate</b> <sub>0:25</sub><br><sub>Āryabhaṭa: a statue labelled as an artistic representation, his boat verse (Golapāda 9) and the 23ʰ 56ᵐ 4.1ˢ sidereal day.</sub></td>
+<td><img src="media/gallery/04-aryabhata.jpg" alt="Aryabhata"><br><b>03 · Calculate</b> <sub>0:25</sub><br><sub>Āryabhaṭa: a statue labelled as an artistic representation, his boat verse (Golapāda 9) and the 23ʰ 56ᵐ 4.1ˢ sidereal day. His own jyā table draws itself as the sine curve.</sub></td>
 <td><img src="media/gallery/05-eclipse.jpg" alt="Eclipses"><br><b>03 · Shadows, not the supernatural</b><br><sub>Lunar and solar eclipses drawn with true tangents to both circles. The diagram says it is not to scale.</sub></td>
 <td><img src="media/gallery/06-samrat-yantra.jpg" alt="Samrat Yantra"><br><b>04 · Measure</b> <sub>0:42</sub><br><sub>Jantar Mantar, Jaipur. The gold line sits on the gnomon edge as measured in the photo; the edge points to the celestial pole.</sub></td>
 </tr>
 <tr>
 <td><img src="media/gallery/07-quadrant.jpg" alt="Graduated quadrant"><br><b>04 · The graduated quadrant</b><br><sub>A circle fitted to the real stone arc closes and becomes the outline of the Moon.</sub></td>
-<td><img src="media/gallery/08-chandrayaan-3.jpg" alt="Chandrayaan-3"><br><b>05 · Explore</b> <sub>0:56</sub><br><sub>An ink Moon traced from NASA LRO data becomes a lit globe. Impact: CHANDRAYAAN-3, 23 August 2023, landing near (not at) the south pole.</sub></td>
+<td><img src="media/gallery/08-chandrayaan-3.jpg" alt="Chandrayaan-3"><br><b>05 · Explore</b> <sub>0:56</sub><br><sub>The Earth–Moon distance rolls up beside an ink Moon traced from NASA LRO data, which becomes a lit globe. Impact: CHANDRAYAAN-3, 23 August 2023, landing near (not at) the south pole.</sub></td>
 <td><img src="media/gallery/09-vikram-pragyan.jpg" alt="Vikram and Pragyan"><br><b>05 · Vikram &amp; Pragyan</b><br><sub>The lander and rover in ISRO's own images and footage, each with its source caption.</sub></td>
 </tr>
 <tr>
@@ -66,7 +66,7 @@ It doesn't claim that modern Indian spaceflight descends directly from ancient a
 |---|---|
 | Star charts | Real positions from the **Yale Bright Star Catalogue** (J2000). The ecliptic and the Moon's 5.145° path are computed, not drawn by hand. The dotted title sits on a strict grid with uniform dots, so it reads as type and never as stars |
 | Capella's arc | An azimuthal projection about the north celestial pole. The whole sky turns as the Earth rotates |
-| Āryabhaṭa | No portrait from his lifetime exists, so the IUCAA statue is **labelled as an artistic representation**. The verse is quoted in Devanagari with a translation |
+| Āryabhaṭa | No portrait from his lifetime exists, so the IUCAA statue is **labelled as an artistic representation**. The verse is quoted in Devanagari with a translation. The jyā line plots his 24 tabulated values exactly (Gītikāpada 12; they sum to R = 3438′) |
 | Eclipses | Umbra and penumbra are exact external and internal tangents. Sizes are chosen so both eclipse types work, and the diagram is marked **not to scale** |
 | Samrat Yantra | The gold line is a line fitted to the gnomon edge in the CC0 photograph (`y = 0.6362x − 12.2`). Its ≈27° tilt is Jaipur's latitude, which is a property of the instrument's geometry |
 | Jantar Mantar | "Early 18th century, built by Maharaja Sawai Jai Singh II". Not called ancient or Vedic |
@@ -125,8 +125,9 @@ src/
   data/cues.json          single source of truth for timing (shared with Python)
   data/stars.json         BSC5 star subsets
   data/isroLaunches.json  every ISRO orbital launch attempt, 1979–2025 (Scene 6 chart)
+  data/jyaTable.json      Āryabhaṭa's 24 sine differences (Scene 3 line)
   scenes/                 OpeningScene … ClosingScene, handoffs.ts
-  components/             PolarChart, MoonGlobe, MoonOverlay, EarthGlobe, GrowthChart, PixelTitle, Type, Icons, SceneTransition
+  components/             PolarChart, MoonGlobe, MoonOverlay, EarthGlobe, GrowthChart, PixelTitle, LineDraw, NumberRoll, Type, Icons, SceneTransition
   audio/AudioMix.tsx      narration, ducked score, cue-locked SFX
   repo/RepoStills.tsx     banners and design sheet for this README
 public/                   fonts (OFL), images, video, audio: everything the render needs, local only
